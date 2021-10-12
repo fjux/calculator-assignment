@@ -13,7 +13,7 @@ public class App
             int index = input.nextInt();
             switch (index) {
                 case 1:
-
+                    calculator();
                     break;
 
                 case 2:
@@ -28,5 +28,30 @@ public class App
         }while(isRunning);
         System.out.print("You have closed the calculator. \nGood bye!");
 
+    }
+    public static void calculator(){
+        Scanner input = new Scanner(System.in);
+        System.out.println(" Choose an operator: +, -, * or /");
+        char operator = input.next().charAt(0);
+
+        switch (operator) {
+            case '+':
+                break;
+
+            case '-':
+                break;
+
+            case '*':
+                break;
+
+            case '/':
+                break;
+
+            default:
+                System.out.println("You entered an invalid operator!");
+                break;
+
+
+        }
     }
 }
